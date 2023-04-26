@@ -33,16 +33,9 @@ variable "kmbl_versioning_status" {
 }
 
 
-#Tags Project Name
-variable "kmbl_project_name" {
-  type = string
-  #default = "abc"
-}
-
-#Tags Project Owner
-variable "kmbl_project_owner" {
-  type = string
-  #default = "xyz"
+#Common Tags Project Name
+variable "kmbl_common_tags" {
+  type        = map
 }
 
 #S3 Bucket Policy Count
