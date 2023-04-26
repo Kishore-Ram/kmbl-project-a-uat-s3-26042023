@@ -44,7 +44,7 @@ resource "aws_s3_bucket_public_access_block" "kmbl_s3_block_public" {
   ignore_public_acls      = true
   restrict_public_buckets = true
 }
-
+/*
 resource "aws_s3_bucket_policy" "s3_policy_attach" {
   count = var.kmbl_s3_bucket_policy_count
   bucket = aws_s3_bucket.kmbl_s3.id
@@ -65,3 +65,4 @@ resource "aws_s3_bucket_policy" "s3_policy_attach" {
           }
           EOF
 }
+*/
